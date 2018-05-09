@@ -9,8 +9,11 @@
 
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<link rel="stylesheet" type="text/css" href="css/nav.css">
+
 		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-		<script type="text/javascript" src="js/scroll.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+		<script type="text/javascript" src=	"js/scroll.js"></script>
+		<script type="text/javascript" src="js/typed.js"></script>
 	</head>
 	<body>
 		<div class="responsive-bar">
@@ -25,17 +28,29 @@
 			<div class="logo">
 				<img src=".\assets\img\logo.png">
 			</div>
+
 			<ul>
-				<li><a href="#home" class="active page-scroll">HOME</a></li>
+				<li><a href="#home" class="page-scroll">HOME</a></li>
 				<li><a href="#about" class="page-scroll">INFORMATION</a></li>
 				<li><a href="#skill" class="page-scroll">SKILL</a></li>
 				<li><a href="#resume" class="page-scroll">RESUME</a></li>
 				<li><a href="#contact" class="page-scroll">CONTACT</a></li>
 			</ul>
+
 		</nav>
 		<!--Below is Home-->
 		<header id="home" class="text-center">
-			<h1>TECHNOLOGY CHANGE THE WORLD</h1>
+			<h1 id="typed2"></h1>
+				<script type="text/javascript">
+				var typed2 = new Typed('#typed2', {
+   				strings: ['TECHNOLOGY CHANGE THE WORLD'],
+    			typeSpeed: 100,
+    			backSpeed: 0,
+    			fadeOut: true,
+    			loop: true,
+  				});
+    			</script>
+			<br>
 			<br>
 			<br>
 			<a href="#"><img style="width: 52px;height: 52px;" src=".\assets\img\arrowdown.png"></a> </div>
